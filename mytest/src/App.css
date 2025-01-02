@@ -1,0 +1,14 @@
+div{
+  background-color: yellowgreen;
+}
+ul{
+  padding: 10px;
+  margin: 40px;
+  border: 5px solid blue;
+  text-align: right;
+  font-size: large;
+}
+li{
+  display: inline-block;
+  margin-right: 10px;
+}
