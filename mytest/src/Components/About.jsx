@@ -1,7 +1,7 @@
 function About(){
     return(
         <div>
-            <h2>This is About functional component</h2>
+            <h2>This is About functional Components</h2>
         </div>
     )
 }

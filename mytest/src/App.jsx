@@ -1,17 +1,14 @@
-import { useState } from 'react';
-function Counter() {
-  // Declare a state variable 'count' with initial value of 0
-  // 'setCount' is the function used to update 'count'
-  const [count, setCount] = useState(0);
-
-  return (
-    <div>
-      <p>Count: {count}</p>
-      {/* Increment the count when the button is clicked */}
-<button onClick={() => setCount(count + 1)}>Increment</button>
-<button onClick={()=> setCount(count-1)}>Decrement</button>
-    </div>
-  );
+import { useState, useEffect } from "react";
+function App(){
+    const [count, setCount]=useState(0);
+    useEffect(()=>{
+        console.log("clicked");
+    })
+    return(
+        <div>
+            <h2>{count}</h2>
+            <button onClick={()=>setCount(count+1)}>click me</button>
+                    </div>
+    )
 }
-
-export default Counter;
+export default App;
